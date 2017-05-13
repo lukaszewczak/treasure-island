@@ -11,6 +11,7 @@ ul, nav {
 body {
     font: normal 16px "Arial", sans-serif;
     color: #555;
+    text-align: center;
 }
 
 a {
@@ -27,4 +28,12 @@ a:hover {
 .round {
     border: 6px solid #2196F3;
     border-radius: 50%;
+}
+
+hr {
+    width: 150px;
+    height: 2px;
+    background-color: #2196F3;
+    border: 0;
+    margin: 40px auto;
 }
