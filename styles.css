@@ -23,3 +23,8 @@ a {
 a:hover {
     opacity: 1;
 }
+
+.round {
+    border: 6px solid #2196F3;
+    border-radius: 50%;
+}
