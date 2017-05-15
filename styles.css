@@ -267,6 +267,27 @@ ILLUSTRATION
 }
 
 /*-----------------------
+CHAPTER ONE
+ -------------------------*/
+.chap1 {
+    background-color: #F7F7F7;
+    margin-top:0
+}
+
+.chap1 p {
+    text-align: left;
+}
+
+.chap1 p.song {
+    text-align: center;
+    width: 80%;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.25;
+    margin-bottom: 25px;
+    padding: 0;
+}
+/*-----------------------
 FOOTER
  -------------------------*/
 
