@@ -304,7 +304,7 @@ footer {
 footer ul {
     display: flex;
     margin-bottom: 25px;
-    font-size: 16px;
+    font-size: 32px;
 }
 
 footer ul li {
