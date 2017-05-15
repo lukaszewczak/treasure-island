@@ -138,6 +138,46 @@ header h2 {
 }
 
 /*-----------------------
+ABOUT
+ -------------------------*/
+.about {
+    background-color: #F7F7F7
+}
+
+.about .grid li {
+    padding: 0 30px;
+    flex-basis: 33%;
+    text-align: center;    
+}
+
+.about .grid li h4 {
+    color: #2196F3;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.about .grid li p {
+    margin: 0;
+}
+
+@media (max-width: 1000px) {
+    .about .grid li {
+        flex-basis: 100%;
+        margin-bottom: 65px;
+    }
+
+    .about .grid li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .about .grid li {
+        flex-basis: 100%;
+    }
+}
+
+/*-----------------------
 HERO
  -------------------------*/
 .hero {
