@@ -9,6 +9,7 @@
     <script src="https://use.fontawesome.com/f96ed2671e.js"></script>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Henny+Penny|Open+Sans" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body id="top">
@@ -77,7 +78,8 @@
     <ul class="grid">
         <li class="small" style="background-image: url('images/one-last-tremendous-cut.jpg')"></li>
         <li class="large" style="background-image: url('images/cover-illustration.jpg')"></li>
-        <li class="small" style="background-image: url('images/the-boarders-swarmed-over-the-fence-like-monkeys.jpg')"></li>
+        <li class="small"
+            style="background-image: url('images/the-boarders-swarmed-over-the-fence-like-monkeys.jpg')"></li>
         <li class="large" style="background-image: url('images/deadly-wrestle.jpg')"></li>
 
     </ul>
@@ -106,7 +108,7 @@
         that
         old sea-song that he sang so often afterwards:</p>
 
-    <p  class="song">&ldquo;Fifteen men on the dead man&rsquo;s chest&mdash;<br>
+    <p class="song">&ldquo;Fifteen men on the dead man&rsquo;s chest&mdash;<br>
         Yo-ho-ho, and a bottle of rum!&rdquo;</p>
 
     <p>in the high, old tottering voice that seemed to have been tuned and broken at the capstan bars. Then he rapped on
@@ -331,7 +333,27 @@
         <li><a href="#" target="_blank"><i class="fa fa-github-square"></i></a></li>
     </ul>
     <p>Read the whole <i>Treasure Island</i> novel on the Internet</p>
-    <p>&copy;<script>document.write((new Date()).getFullYear())</script> Whoever</p>
+    <p>&copy;<script>document.write((new Date()).getFullYear())</script>
+        Whoever
+    </p>
 </footer>
+
+<script>
+    $(document).ready(function () {
+        $('a[href^="#"]').on('click', function (e) {
+            e.preventDefault();
+
+            var target = this.hash,
+                $target = $(target);
+
+            console.dir($target.offset());
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 900, 'swing', function () {
+                window.location.hash = target;
+            });
+        });
+    });
+</script>
 </body>
 </html>
