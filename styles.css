@@ -235,6 +235,36 @@ HERO
         font-size: 24px;
     }
 }
+/*-----------------------
+ILLUSTRATION
+ -------------------------*/
+.illustrations {
+    background-color: #fff;
+}
+.illustrations .grid li {
+    padding: 20px;
+    height: 350px;
+    border-radius: 3px;
+
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+    background-color: #333;
+}
+
+.illustrations .grid li.small {
+    flex-basis: 40%;
+}
+
+.illustrations .grid li.large {
+    flex-basis: 60%;
+}
+
+@media (max-width: 1000px) {
+    .illustrations .grid li.small, .illustrations .grid li.large {
+        flex-basis: 100%;
+    }
+}
 
 /*-----------------------
 FOOTER
